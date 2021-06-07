@@ -7,10 +7,10 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
+
     fun <S> createReactiveService(serviceClass: Class<S>, okhttpClient: OkHttpClient, baseURl: String): S {
 
-        val gson = GsonBuilder()
-            .create()
+        GsonBuilder().create()
 
         val retrofit = Retrofit.Builder()
             .baseUrl(baseURl)
