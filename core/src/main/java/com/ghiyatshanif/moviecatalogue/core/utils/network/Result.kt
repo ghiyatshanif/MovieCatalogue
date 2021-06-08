@@ -13,6 +13,5 @@ sealed class Result<T> {
         fun <T> success(data: T): Result<T> = Success(data)
         fun <T> empty(): Result<T> = Empty()
         fun <T> fail(throwable: Throwable, message: String?): Result<T> = Failure(throwable, message)
-        fun <T> fail(message: String?): Result<T> = Failure(null, message)
     }
 }

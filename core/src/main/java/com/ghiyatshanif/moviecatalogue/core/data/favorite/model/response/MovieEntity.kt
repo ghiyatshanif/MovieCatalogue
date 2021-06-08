@@ -1,11 +1,9 @@
 package com.ghiyatshanif.moviecatalogue.core.data.favorite.model.response
 
-import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.ghiyatshanif.moviecatalogue.core.utils.network.Model
-import kotlinx.parcelize.Parcelize
 
 @Entity(tableName = "movie_favorite")
 data class MovieEntity(
